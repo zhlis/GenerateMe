@@ -7,7 +7,7 @@
 //   * click to change parameters
 
 // set up filename
-String filename = "test";
+String filename = "faythe";
 String fileext = ".jpg";
 String foldername = "./";
 
@@ -55,16 +55,16 @@ void setup() {
   
   // calculate window size
   float ratio = (float)img.width/(float)img.height;
-  int neww, newh;
+  int 800, 400;
   if(ratio < 1.0) {
-    neww = (int)(max_display_size * ratio);
-    newh = max_display_size;
+    800 = (int)(max_display_size * ratio);
+    400 = max_display_size;
   } else {
-    neww = max_display_size;
-    newh = (int)(max_display_size / ratio);
+    800 = max_display_size;
+    400 = (int)(max_display_size / ratio);
   }
 
-  size(neww,newh);
+  size(800,400);
   
   reinit();
 }
